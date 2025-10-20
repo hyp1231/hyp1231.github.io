@@ -19,6 +19,10 @@ body {
   transition: opacity 0.3s ease;
 }
 
+[id] {
+  scroll-margin-top: 50px;
+}
+
 #news li {
   padding-top: 8px;
 }

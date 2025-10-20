@@ -65,6 +65,17 @@
             <p>I am a PhD candidate at <a href="https://cse.ucsd.edu/", target="_blank">UC San Diego</a>, fortunate to be advised by <a href="https://cseweb.ucsd.edu/~jmcauley/" target="_blank">Prof. Julian McAuley</a>. I have spent wonderful summers interning at <a href="https://deepmind.google/" target="_blank">Google DeepMind</a> and <a href="https://www.amazon.com/" target="_blank">Amazon</a>. I obtained my M.E. and B.E. from <a href="http://ai.ruc.edu.cn/english/index.htm" target="_blank">Renmin University of China</a>, advised by <a href="https://scholar.google.com/citations?user=JNhNacoAAAAJ" target="_blank">Prof. Wayne Xin Zhao</a>, who leads the <a href="http://aibox.ruc.edu.cn/" target="_blank">AI Box</a> Lab. My recent research interests focus on generative recommendation, tokenization, and large language models.</p>
           </div>
         </div>
+        <div class="row" id="summary" style="padding-top: 0px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px;">
+          <div class="col-md-10" style="background-color: rgba(48, 125, 246, 0.03); padding-top: 10px; border-radius: 8px;">
+            <strong>Research Summary</strong>
+            <p>My research focuses on developing AI systems that learn from human actions to better understand and interact with people. Compared to text, human actions carry richer information while being noisy and heterogeneous. During my PhD, I aim to answer the question: <strong>how should we represent human actions when building generative models?</strong> My recent work explores:</p>
+            <ul style="margin-left: auto; margin-right: auto;">
+              <li><strong>Action tokenization</strong>, which converts raw actions into machine-readable token sequences [<a href="#hou2025actionpiece">ActionPiece <i style="font-size: small;">(ICML'25 Spotlight)</i></a>, <a href="#hou2025rpg">RPG <i style="font-size: small;">(KDD'25)</i></a>];</li>
+              <li><strong>Generative recommendation</strong>, which models user actions with large generative models [<a href="#zheng2024lcrec">LC-Rec <i style="font-size: small;">(ICDE'24)</i></a>];</li>
+              <li><strong>LLM-based recommendation</strong>, which bridges natural language and human actions [<a href="#hou2022unisrec">UniSRec <i style="font-size: small;">(KDD'22)</i></a>, <a href="#hou2023vqrec">VQ-Rec <i style="font-size: small;">(WWW'23)</i></a>, <a href="#hou2024llmrank">LLMRank <i style="font-size: small;">(ECIR'24)</i></a>];</li>
+            </ul>
+          </div>
+        </div>
         <div class="row" id="news" style="padding-top: 0px;">
           <div class="col-md-10">
             <div><strong>📌 Pinned</strong>
@@ -97,7 +108,7 @@
                 <!-- </a> -->
                 <br>
                 <img alt="PyPI - Downloads - total" src="https://static.pepy.tech/badge/recbole">
-                <!-- <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/recbole"> -->
+                <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/recbole">
               </div>
             </div>
           </div>
@@ -109,7 +120,7 @@
             <i style="font-size: small; color: gray; ">† denotes equal contribution</i>
             <h5 style="padding-top: 2%;">2025</h5>
             <ul>
-              <li>
+              <li id="hou2025actionpiece">
                 <p><strong>ActionPiece: Contextually Tokenizing Action Sequences for Generative Recommendation.</strong></p>
                 <p><strong>Yupeng Hou</strong>, Jianmo Ni, Zhankui He, Noveen Sachdeva, Wang-Cheng Kang, Ed H. Chi, Julian McAuley, Derek Zhiyuan Cheng.</p>
                 <p>
@@ -132,7 +143,7 @@
                   </div>
                 </p>
               </li>
-              <li>
+              <li id="hou2025rpg">
                 <p><strong>Generating Long Semantic IDs in Parallel for Recommendation.</strong></p>
                 <p><strong>Yupeng Hou</strong>, Jiacheng Li, Ashley Shin, Jinsung Jeon, Abhishek Santhanam, Wei Shao, Kaveh Hassani, Ning Yao, Julian McAuley.</p>
                 <p>
@@ -158,7 +169,7 @@
             </ul>
             <h5>2024</h5>
             <ul>
-              <li>
+              <li id="zheng2024lcrec">
                 <p><strong>Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation.</strong></p>
                 <p>Bowen Zheng, <strong>Yupeng Hou</strong>, Hongyu Lu, Yu Chen, Wayne Xin Zhao, Ji-Rong Wen.</p>
                 <p>
@@ -179,28 +190,7 @@
                   </div>
                 </p>
               </li>
-              <li>
-                <p><strong>Multi-Behavior Generative Recommendation.</strong></p>
-                <p>Zihan Liu<sup>†</sup>, <strong>Yupeng Hou</strong><sup>†</sup>, Julian McAuley.</p>
-                <p>
-                  <span>CIKM 2024</span>
-                  [<a href="https://arxiv.org/abs/2405.16871" target="_blank">paper</a>]
-                  [<a href="https://github.com/anananan116/MBGen" target="_blank">code</a>]
-                  [<a href="#" data-toggle="collapse" data-target="#liu2024mbgen">bib</a>]
-                  <div id="liu2024mbgen" class="collapse in">
-                    <br>
-                    <pre>
-@inproceedings{liu2024mbgen,
-  title={Multi-Behavior Generative Recommendation},
-  author={Zihan Liu and Yupeng Hou and Julian McAuley},
-  booktitle={{CIKM}},
-  year={2024}
-}
-                    </pre>
-                  </div>
-                </p>
-              </li>
-              <li>
+              <li id="hou2024llmrank">
                 <p><strong>Large Language Models are Zero-Shot Rankers for Recommender Systems.</strong></p>
                 <p><strong>Yupeng Hou</strong><sup>†</sup>, Junjie Zhang<sup>†</sup>, Zihan Lin, Hongyu Lu, Ruobing Xie, Julian McAuley, Wayne Xin Zhao.</p>
                 <p>
@@ -224,7 +214,7 @@
             </ul>
             <h5>2023</h5>
             <ul>
-              <li>
+              <li id="hou2023vqrec">
                 <p><strong>Learning Vector-Quantized Item Representation for Transferable Sequential Recommenders.</strong></p>
                 <p><strong>Yupeng Hou</strong>, Zhankui He, Julian McAuley, Wayne Xin Zhao.</p>
                 <p>
@@ -248,7 +238,7 @@
             </ul>
             <h5>2022</h5>
             <ul>
-              <li>
+              <li id="hou2022unisrec">
                 <p><strong>Towards Universal Sequence Representation Learning for Recommender Systems.</strong></p>
                 <p><strong>Yupeng Hou</strong><sup>†</sup>, Shanlei Mu<sup>†</sup>, Wayne Xin Zhao, Yaliang Li, Bolin Ding, Ji-Rong Wen.</p>
                 <p>
@@ -271,7 +261,7 @@
                   </div>
                 </p>
               </li>
-              <li>
+              <li id="zhao2022recbole2">
                 <p><strong>RecBole 2.0: Towards a More Up-to-Date Recommendation Library.</strong></p>
                 <p>Wayne Xin Zhao, <strong>Yupeng Hou</strong><sup>†</sup>, Xingyu Pan<sup>†</sup>, Chen Yang, Zeyu Zhang, Zihan Lin, Jingsen Zhang, Shuqing Bian, Jiakai Tang, Wenqi Sun, Yushuo Chen, Lanling Xu, Gaowei Zhang, Zhen Tian, Changxin Tian, Shanlei Mu, Xinyan Fan, Xu Chen, Ji-Rong Wen.</p>
                 <p>
@@ -295,7 +285,7 @@
                   </div>
                 </p>
               </li>
-              <li>
+              <li id="yang2022dpgnn">
                 <p><strong>Modeling Two-Way Selection Preference for Person-Job Fit.</strong></p>
                 <p>Chen Yang, <strong>Yupeng Hou</strong>, Yang Song, Tao Zhang, Ji-Rong Wen, Wayne Xin Zhao.</p>
                 <p>
@@ -320,7 +310,7 @@
             </ul>
             <h5>2021</h5>
             <ul>
-              <li>
+              <li id="zhao2021recbole">
                 <p><strong>RecBole: Towards a Unified, Comprehensive and Efficient Framework for Recommendation Algorithms.</strong></p>
                 <p>Wayne Xin Zhao, Shanlei Mu<sup>†</sup>, <strong>Yupeng Hou</strong><sup>†</sup>, Zihan Lin, Kaiyuan Li, Yushuo Chen, Yujie Lu, Hui Wang, Changxin Tian, Xingyu Pan, Yingqian Min, Zhichao Feng, Xinyan Fan, Xu Chen, Pengfei Wang, Wendi Ji, Yaliang Li, Xiaoling Wang, Ji-Rong Wen.</p>
                 <p>
@@ -532,7 +522,7 @@
                 <strong>Teaching Assistant, University of California, San Diego</strong>
                 <ul>
                   <!-- <li>2025 Spring, <a href="https://cseweb.ucsd.edu/classes/sp25/cse253-a/" target="_blank">CSE 253R: Machine Learning for Music</a>, with Julian McAuley.</li> -->
-                  <li>2024 Fall, <a href="https://cseweb.ucsd.edu/classes/fa24/cse258-b/" target="_blank">CSE 258: Web Mining and Recommender Systems</a>, with Julian McAuley.</li>
+                  <li><a href="https://cseweb.ucsd.edu/classes/fa25/cse258-a/" target="_blank">2025 Fall</a> & <a href="https://cseweb.ucsd.edu/classes/fa24/cse258-b/" target="_blank">2024 Fall</a>, CSE 258: Web Mining and Recommender Systems, with Julian McAuley.</li>
                 </ul>
               </li>
               <li>
